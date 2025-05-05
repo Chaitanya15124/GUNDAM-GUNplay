@@ -21,17 +21,27 @@
       <p class="price">₹3999</p>
       <a class="buy" href="https://wa.me/919929833559?text=I'm%20interested%20in%20Strike%20Freedom%20Gundam%201/144">Buy Now</a>
     </div>
+
     <div class="product">
       <img src="ariel-justice.jpeg" alt="Gundam Ariel Justice">
       <h2>Gundam Ariel Justice 1/144</h2>
       <p class="price">₹2999</p>
       <a class="buy" href="https://wa.me/919929833559?text=I'm%20interested%20in%20Gundam%20Ariel%20Justice%201/144">Buy Now</a>
     </div>
+
     <div class="product">
       <img src="dark-gundam.jpeg" alt="Dark Gundam">
       <h2>Dark Gundam 1/144</h2>
       <p class="price">₹3699</p>
       <a class="buy" href="https://wa.me/919929833559?text=I'm%20interested%20in%20Dark%20Gundam%201/144">Buy Now</a>
+    </div>
+
+    <!-- New Product -->
+    <div class="product">
+      <img src="new-product.jpeg" alt="New Gundam Model">
+      <h2>New Gundam Model 1/144</h2>
+      <p class="price">₹3599</p>
+      <a class="buy" href="https://wa.me/919929833559?text=I'm%20interested%20in%20New%20Gundam%20Model%201/144">Buy Now</a>
     </div>
   </section>
 
@@ -42,20 +52,12 @@
   </footer>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Change tagline after 5 seconds
-      setTimeout(function () {
-        const tagline = document.querySelector('.tagline');
-        if (tagline) {
-          tagline.textContent = 'Build Your Legacy, One Model at a Time!';
-        }
-      }, 5000);
-
-      // Show alert when Buy Now is clicked
-      const buyButtons = document.querySelectorAll('.buy');
-      buyButtons.forEach(button => {
-        button.addEventListener('click', function (e) {
-          alert('Thank you for your interest! We will reach out to you shortly.');
+    // Add smooth scroll effect
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
         });
       });
     });
