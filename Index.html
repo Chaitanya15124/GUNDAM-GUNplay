@@ -42,18 +42,21 @@
   </footer>
 
   <script>
-    // JavaScript to dynamically change the tagline after a few seconds
-    window.onload = function() {
-      setTimeout(function() {
-        document.querySelector('.tagline').textContent = 'Build Your Legacy, One Model at a Time!';
-      }, 5000); // Changes tagline after 5 seconds
-    };
+    document.addEventListener('DOMContentLoaded', function () {
+      // Change tagline after 5 seconds
+      setTimeout(function () {
+        const tagline = document.querySelector('.tagline');
+        if (tagline) {
+          tagline.textContent = 'Build Your Legacy, One Model at a Time!';
+        }
+      }, 5000);
 
-    // Adding more interactivity: Alert when user clicks on 'Buy Now'
-    const buyButtons = document.querySelectorAll('.buy');
-    buyButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        alert('Thank you for your interest! We will reach out to you shortly.');
+      // Show alert when Buy Now is clicked
+      const buyButtons = document.querySelectorAll('.buy');
+      buyButtons.forEach(button => {
+        button.addEventListener('click', function (e) {
+          alert('Thank you for your interest! We will reach out to you shortly.');
+        });
       });
     });
   </script>
