@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GUNDAM GUNplay</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="logo.png" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="GUNDAM GUNplay Logo" class="logo">
+    <h1>GUNDAM GUNplay</h1>
+    <p class="tagline">Assemble the Future</p>
+  </header>
+
+  <section class="products">
+    <div class="product">
+      <img src="strike-freedom.jpeg" alt="Strike Freedom Gundam">
+      <h2>Strike Freedom Gundam 1/144</h2>
+      <p class="price">₹3999</p>
+      <a class="buy" href="https://wa.me/919929833559?text=I'm%20interested%20in%20Strike%20Freedom%20Gundam%201/144">Buy Now</a>
+    </div>
+    <div class="product">
+      <img src="ariel-justice.jpeg" alt="Gundam Ariel Justice">
+      <h2>Gundam Ariel Justice 1/144</h2>
+      <p class="price">₹2999</p>
+      <a class="buy" href="https://wa.me/919929833559?text=I'm%20interested%20in%20Gundam%20Ariel%20Justice%201/144">Buy Now</a>
+    </div>
+    <div class="product">
+      <img src="dark-gundam.jpeg" alt="Dark Gundam">
+      <h2>Dark Gundam 1/144</h2>
+      <p class="price">₹3699</p>
+      <a class="buy" href="https://wa.me/919929833559?text=I'm%20interested%20in%20Dark%20Gundam%201/144">Buy Now</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Contact: <a href="mailto:gundamguplay@gmail.com">gundamguplay@gmail.com</a></p>
+    <p><a href="https://www.instagram.com/gundam_gunplayfigures" target="_blank">Instagram: @gundam_gunplayfigures</a></p>
+    <p>&copy; 2025 GUNDAM GUNplay. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // JavaScript to dynamically change the tagline after a few seconds
+    window.onload = function() {
+      setTimeout(function() {
+        document.querySelector('.tagline').textContent = 'Build Your Legacy, One Model at a Time!';
+      }, 5000); // Changes tagline after 5 seconds
+    };
+
+    // Adding more interactivity: Alert when user clicks on 'Buy Now'
+    const buyButtons = document.querySelectorAll('.buy');
+    buyButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        alert('Thank you for your interest! We will reach out to you shortly.');
+      });
+    });
+  </script>
+</body>
+</html>
