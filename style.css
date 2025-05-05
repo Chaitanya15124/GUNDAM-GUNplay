@@ -1,3 +1,4 @@
+/* General Styling */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -6,6 +7,7 @@ body {
   text-align: center;
 }
 
+/* Header Styling */
 header {
   padding: 2rem 1rem;
   background: #111;
@@ -26,9 +28,9 @@ h1 {
 .tagline {
   font-size: 1.1rem;
   color: #999;
-  transition: color 0.3s ease;
 }
 
+/* Products Section */
 .products {
   display: flex;
   flex-wrap: wrap;
@@ -42,13 +44,13 @@ h1 {
   border-radius: 10px;
   padding: 1rem;
   width: 280px;
-  box-shadow: 0 0 10px rgba(0,255,255,0.1);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 15px rgba(255,0,0,0.5);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
 }
 
 .product img {
@@ -67,6 +69,7 @@ h1 {
   font-weight: bold;
 }
 
+/* Buy Button Styling */
 .buy {
   display: inline-block;
   margin-top: 1rem;
@@ -83,59 +86,16 @@ h1 {
   background: #ff3366;
 }
 
+/* Footer Styling */
 footer {
   background: #111;
-  padding: 1.5rem
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #ccc;
+  border-top: 1px solid #333;
+}
 
-Absolutely! Here's the *final, corrected version* of your GUNDAM GUNplay website with the JavaScript in a separate file.
-
----
-
-### ✅ 1. index.html
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GUNDAM GUNplay</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="logo.png" />
-</head>
-<body>
-  <header>
-    <img src="logo.png" alt="GUNDAM GUNplay Logo" class="logo">
-    <h1>GUNDAM GUNplay</h1>
-    <p class="tagline">Assemble the Future</p>
-  </header>
-
-  <section class="products">
-    <div class="product">
-      <img src="strike-freedom.jpeg" alt="Strike Freedom Gundam">
-      <h2>Strike Freedom Gundam 1/144</h2>
-      <p class="price">₹3999</p>
-      <a class="buy" href="https://wa.me/919929833559?text=I'm%20interested%20in%20Strike%20Freedom%20Gundam%201/144">Buy Now</a>
-    </div>
-    <div class="product">
-      <img src="ariel-justice.jpeg" alt="Gundam Ariel Justice">
-      <h2>Gundam Ariel Justice 1/144</h2>
-      <p class="price">₹2999</p>
-      <a class="buy" href="https://wa.me/919929833559?text=I'm%20interested%20in%20Gundam%20Ariel%20Justice%201/144">Buy Now</a>
-    </div>
-    <div class="product">
-      <img src="dark-gundam.jpeg" alt="Dark Gundam">
-      <h2>Dark Gundam 1/144</h2>
-      <p class="price">₹3699</p>
-      <a class="buy" href="https://wa.me/919929833559?text=I'm%20interested%20in%20Dark%20Gundam%201/144">Buy Now</a>
-    </div>
-  </section>
-
-  <footer>
-    <p>Contact: <a href="mailto:gundamguplay@gmail.com">gundamguplay@gmail.com</a></p>
-    <p><a href="https://www.instagram.com/gundam_gunplayfigures" target="_blank">Instagram: @gundam_gunplayfigures</a></p>
-    <p>&copy; 2025 GUNDAM GUNplay. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+footer a {
+  color: #00eaff;
+  text-decoration: none;
+}
